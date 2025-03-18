@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "nocol",
+  "version": "${version}",
+
+  "name": "nocol",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/nocol/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": ["me._2818.nocol.client.NocolClient"],
+    "main": ["me._2818.nocol.Nocol"]
+  },
+
+  "mixins": [
+    "nocol.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
